@@ -1,0 +1,17 @@
+{
+  "name": "e-money-currency-rate",
+  "version": "1.0",
+  "description": "Helps you to get currency rates",
+//  "background_page": "background.html",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["all.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
